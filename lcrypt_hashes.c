@@ -249,7 +249,7 @@ static int lcrypt_hash_index(lua_State *L)
   return 0;
 }
 
-static const struct luaL_reg lcrypt_hash_flib[] =
+static const struct luaL_Reg lcrypt_hash_flib[] =
 {
   { "__index", lcrypt_hash_index },
   { "__gc", lcrypt_hash_gc },

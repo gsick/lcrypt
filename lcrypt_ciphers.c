@@ -287,7 +287,7 @@ static int lcrypt_key_size(lua_State *L)
   return 0;
 }
 
-static const struct luaL_reg lcrypt_key_flib[] =
+static const struct luaL_Reg lcrypt_key_flib[] =
 {
   { "__index", lcrypt_key_index },
   { "__newindex", lcrypt_key_newindex },

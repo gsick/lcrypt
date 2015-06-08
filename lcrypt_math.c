@@ -572,7 +572,7 @@ static int lcrypt_bigint_create(lua_State *L)
   return 1;
 }
 
-static const struct luaL_reg lcrypt_bigint_flib[] =
+static const struct luaL_Reg lcrypt_bigint_flib[] =
 {
   { "__index", lcrypt_bigint_index },
   { "__add", lcrypt_bigint_add },
