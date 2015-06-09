@@ -285,7 +285,7 @@ static void lcrypt_start_hashes(lua_State *L)
     lua_pushinteger(L, value);                            \
     lua_settable(L, -3);                                  \
   }
-  ADD_MODE(L, hash, HASH_MODE_HASH);  ADD_MODE(L, hmac, HASH_MODE_HMAC);  ADD_MODE(L, hmac, HASH_MODE_HMAC);
+  ADD_MODE(L, hash, HASH_MODE_HASH);  ADD_MODE(L, hmac, HASH_MODE_HMAC);  ADD_MODE(L, omac, HASH_MODE_OMAC);
   #undef ADD_MODE
   lua_settable(L, -3);
 
